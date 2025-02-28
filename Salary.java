@@ -7,17 +7,14 @@
  */
 public class Salary
 {
-    // private HourWage (int hours, int hourlWage) {
-    // this.hours = hours;
-    // this.hourlyWage= wage;
-    //}
-    
-    // // public int total() {
-    // //    total = hours * wage;
-    // }
-    
-    // public double Salary() {
-    // Salary = total * 1.3; 
-    // System.out.println("Your salary is :" + Salary + "$");
-    // }
+    // Salary is the netPay
+    // Correction : I wrote everything in one method and created the variables Wage and Total. I also added "void" after public, which I forgot to add.
+    // I added the varibale deduction and arranged my equation to calculate the taxes.
+    public void HourWage (int hours, int hourlyWage) {
+        int wage = hourlyWage;
+        int total = hours * wage;
+        double deduction = total * 0.3; 
+        double Salary = total - deduction;
+        System.out.println("Your salary is :" + Salary + "$");
+    }
 }
