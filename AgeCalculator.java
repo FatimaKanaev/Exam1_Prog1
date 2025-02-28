@@ -7,16 +7,14 @@
  */
 public class AgeCalculator
 {
-    private int currentYear = 2025;
-    private int age(int yearOfBirth) {
-        // return age;
-        // if (age >= currentYear) {
-            // System.out.println("You're alowed to drive in Canada");
-        // }
-        // else {
-            // int yearsLeft = currentYear - age;
-            // System.out.println("You have to wait " + yearsLeft + "years to start driving");
-        // }
-        return 0;
-    }
+    private int currentYear = 2025; 
+    public void CalculateAge(int birthYear){
+        int age = currentYear - birthYear;
+        if (age >= 16) {
+            System.out.println("You're alowed to drive in Canada");
+        }
+        else {
+            System.out.println("You have to wait " + (16 -age) + "years to start driving");
+        }
+    } 
 }
