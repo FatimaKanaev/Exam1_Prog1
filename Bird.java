@@ -19,4 +19,7 @@ public class Bird
     public void sing()  {
         System.out.println("Bird vocallization in action ...");
     }
+    public String getColor() {
+        return this.color;
+    }
 }
